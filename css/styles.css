@@ -1,30 +1,25 @@
 body {
     margin: 0;
-    font-family: 'Alegreya Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Alegreya Sans', Arial, sans-serif;
 }
 
 header {
-    background-color: white;
-    color: #333;
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 20px;
+    padding-bottom: 60px; /* Adjust this value based on your footer's height */
 }
 
 .exhibition {
     margin-bottom: 30px;
-    text-align: center;
+    opacity: 0; /* Set initial opacity to 0 for the fade-in effect */
+    transform: translateY(20px); /* Move the elements down a bit for a smooth entrance */
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .exhibition img {
@@ -39,14 +34,19 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white;
-    color: #333;
+    background-color: #333;
+    color: white;
     padding: 10px;
-    text-align: center;
 }
 
 nav a {
-    color: #333; /* Updated link color */
+    color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+/* Add a class to trigger the fade-in effect when scrolling */
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
