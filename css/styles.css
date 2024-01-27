@@ -3,11 +3,12 @@ body {
     font-family: 'Alegreya Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 header {
 	text-align: center;
+
 }
 
 main {
@@ -16,16 +17,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    max-width: 500px;
-    width: 100%;
+    padding: 5px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
 #logo-image {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
-	margin-top: 20px;
+	margin: 20px;
 }
 
 #tagline {
@@ -40,27 +40,29 @@ main {
 	font-weight: 1000;
     text-align: left;
 	margin-bottom: 0;
+	margin-left: 20px;
 }
 
-.exhibition-date {
+.date {
     font-size: 25px;
 	font-weight: 1000;
 	margin-top: 0;
-	margin-bottom: 5;
+	margin-left: 20px;
 }
 
-.exhibition img {
-    max-width: 100%;
+.img {
+    max-width: 90%;
     height: auto;
-    border: 1px solid #ddd;
-    border-radius: 15px; /* Add rounded corners */
+    border: 1px solid white;
+    border-radius: 8px; /* Add rounded corners */
     overflow: hidden; /* Hide overflow to keep the rounded corners */
+	margin-left: 20px;
 }
 
 hr {
     color: #5F5F5F;
     height: 2px;
-    width: 100%;
+    width: 80%;
     border: none;
     border-top: 2px solid #5F5F5F;
     margin: 50px 0;
@@ -70,11 +72,11 @@ footer {
     background: linear-gradient(to bottom, transparent 1%, white); /* More abrupt transition at the top */
     color: #333;
     text-align: center;
-    padding: 10px;
+    padding: 0px;
     width: 100%;
 	font-size: 30px;
 	font-weight: 1000;
-	margin-top: 0;
+	margin-top: 10;
 	margin-bottom: 5;
     position: fixed; /* Set position to fixed */
 	bottom: 0; /* Align to the bottom of the viewport */
@@ -85,10 +87,4 @@ footer {
     color: #000; /* Set link color to black */
     text-decoration: underline;
     margin: 0 15px;
-}
-
-@media (max-width: 700px) {
-    main {
-        max-width: 100%;
-    }
 }
