@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Inner Out",
+    "date": "August 21st-October 6th, 2020",
+    "imageSrc": "images/nav/MM_6.png",
+    "description": "Additional exhibition details can be added here"
+  },
+  {
+    "title": "Touching Down Lightly",
+    "date": "August 3rd-August 7th, 2019",
+    "imageSrc": "images/nav/MM_5.jpg",
+    "description": "Additional exhibition details can be added here"
+  },
+  {
+    "title": "Ground, As In",
+    "date": "March 23rd-April 6th, 2019",
+    "imageSrc": "images/nav/MM_4.jpg",
+    "description": "Additional exhibition details can be added here"
+  },
+  {
+    "title": "Our Going On",
+    "date": "December 8-16th, 2018",
+    "imageSrc": "images/nav/MM_3.jpg",
+    "description": "Additional exhibition details can be added here"
+  },
+  {
+    "title": "Cowlick",
+    "date": "July 13-16th, 2018",
+    "imageSrc": "images/nav/MM_2.jpg",
+    "description": "Additional exhibition details can be added here"
+  },
+  {
+    "title": "Moonmist",
+    "date": "March 17-24th, 2018",
+    "imageSrc": "images/nav/MM_1.jpg",
+    "description": "Additional exhibition details can be added here"
+  }
+]

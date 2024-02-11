@@ -1,0 +1,22 @@
+{
+  "title": "Touching Down Lightly",
+  "date": "August 3rd - August 7th, 2019",
+  "curator": "Alex Goss",
+  "weather": "Hi/Lo: 93/78°F ⛈️🌒",
+  "artists": [
+    {
+      "name": "Lisa Radon",
+      "url": "http://www.lisaradon.com/"
+    }
+  ],
+  "listOfWorksUrl": "https://docs.google.com/document/...",
+  "images": [
+    {
+      "src": "path/to/image1.jpg",
+      "alt": "Description of image 1"
+    }
+
+  ],
+  "previousExhibitionUrl": "path/to/previous/exhibition",
+  "nextExhibitionUrl": "path/to/next/exhibition"
+}

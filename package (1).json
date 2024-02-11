@@ -1,0 +1,15 @@
+{
+  "name": "2024site",
+  "version": "1.0.0",
+  "description": "Moonmist Site",
+  "main": "index.js",
+  "dependencies": {
+    "htmx.org": "^1.9.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AGoss",
+  "license": "ISC"
+}

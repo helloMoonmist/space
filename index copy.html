@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" id="main-stylesheet">
+    <link rel="stylesheet" href="css/stylesdark.css" id="dark-mode-stylesheet" disabled>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap">
+    <title>Moonmist</title>
+</head>
+<body>
+
+  <header>
+    <a href="/"><img src="images/std/MM_Logo.png" alt="Moonmist Logo" id="logo-image"></a>
+    <p id="tagline">An artist-run space founded in Houston, Texas.</p>
+    <label class="switch">
+      <input type="checkbox" id="dark-mode-checkbox">
+      <span class="slider"></span>
+    </label>
+  </header>
+	
+
+  <main>
+    <!-- Exhibition 6 -->
+    <section>
+      <h2 class="exhibition">Inner Out</h2>
+      <p class="date">August 21st-October 6th, 2020</p>
+      <img src="images/nav/MM_6.png" alt="Exhibition 6 Image" class="img">
+      <!-- Additional exhibition details can be added here -->
+    </section>
+    <hr>
+
+    <!-- Exhibition 5 -->
+    <section>
+      <h2 class="exhibition">Touching Down Lightly</h2>
+      <p class="date">August 3rd-August 7th, 2019</p>
+      <img src="images/nav/MM_5.jpg" alt="Exhibition 5 Image" class="img">
+      <!-- Additional exhibition details can be added here -->
+    </section>
+    <hr>
+
+    <!-- Exhibition 4 -->
+    <section>
+      <h2 class="exhibition">Ground, As In</h2>
+      <p class="date">March 23rd-April 6th, 2019</p>
+      <img src="images/nav/MM_4.jpg" alt="Exhibition 4 Image" class="img">
+      <!-- Additional exhibition details can be added here -->
+    </section>
+    <hr>
+
+    <!-- Exhibition 3 -->
+    <section>
+      <h2 class="exhibition">Our Going On</h2>
+      <p class="date">December 8-16th, 2018</p>
+      <img src="images/nav/MM_3.jpg" alt="Exhibition 3 Image" class="img">
+      <!-- Additional exhibition details can be added here -->
+    </section>
+    <hr>
+
+    <!-- Exhibition 2 -->
+    <section>
+      <h2 class="exhibition">Cowlick</h2>
+      <p class="date">July 13-16th, 2018</p>
+      <img src="images/nav/MM_2.jpg" alt="Exhibition 2 Image" class="img">
+      <!-- Additional exhibition details can be added here -->
+    </section>
+    <hr>
+      
+    <!-- Exhibition 1 -->
+    <section>
+      <h2 class="exhibition">Moonmist</h2>
+      <p class="date">March 17-24th, 2018</p>
+      <img src="images/nav/MM_1.jpg" alt="Exhibition 1 Image" class="img">
+      <!-- Additional exhibition details can be added here -->
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </main>
+  
+<!-- Footer -->
+<footer>
+    <p class="nav a">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </p>
+</footer>
+
+<!-- JavaScript to toggle dark mode with smooth transition -->
+<script>
+    const darkModeToggle = document.getElementById('dark-mode-checkbox');
+    const darkModeStylesheet = document.getElementById('dark-mode-stylesheet');
+    
+    // Function to toggle dark mode with smooth transition
+    function toggleDarkMode() {
+        darkModeStylesheet.disabled = !darkModeToggle.checked;
+        document.body.classList.toggle('dark-mode', darkModeToggle.checked);
+    }
+    
+    // Listen for changes on the dark mode toggle checkbox
+    darkModeToggle.addEventListener('change', toggleDarkMode);
+</script>
+    
+	// Fetch and create exhibition sections
+    fetch('exhibitions/exhibitions.json')
+      .then(response => response.json())
+      .then(exhibitions => {
+        createExhibitionSections(exhibitions);
+      });
+
+    function createExhibitionSections(exhibitions) {
+        const main = document.querySelector('main');
+        exhibitions.forEach(exhibition => {
+            const section = document.createElement('section');
+            section.innerHTML = `
+              <h2 class="exhibition">${exhibition.title}</h2>
+              <p class="date">${exhibition.date}</p>
+              <img src="${exhibition.imageSrc}" alt="${exhibition.title} Image" class="img">
+              <p>${exhibition.description}</p>
+            `;
+            main.appendChild(section);
+        });
+    }
+	
+
+</body>
+</html>
+
