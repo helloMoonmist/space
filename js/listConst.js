@@ -1,5 +1,5 @@
 // Assuming this code is in exhConstructor.js or a similar file
-fetch('/exhibitions.json')
+fetch('/agossagoss/moonmist_rebuild/exhibitions.json')
     .then(response => response.json())
     .then(exhibitions => {
         const container = document.getElementById('exhibition-container');

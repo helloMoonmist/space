@@ -5,6 +5,16 @@ function loadExhibitionContent(exhibitionUrl) {
         .then(htmlContent => {
             const container = document.getElementById('exhibition-container');
             container.innerHTML = htmlContent;  // Replacing the content
+            
+            // Event listener for the navigation links inside the loaded exhibition
+            const navigationLinks = container.querySelectorAll('.fwd-bck a, .nav-link');
+            navigationLinks.forEach(navLink => {
+                navLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    const nextPageUrl = this.getAttribute('href'); // Get the URL of the next page
+                    loadExhibitionContent(nextPageUrl); // Load the exhibition content
+                });
+            });
         })
         .catch(error => {
             console.error('Error loading exhibition:', error);
