@@ -1,121 +1,52 @@
 body {
-    margin: 0;
-    font-family: 'Alegreya Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #222; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #222;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #222; /* Adjust background color as needed */
-    text-align: center;
-    padding: 10px;
-}
-
-main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
+    background-color: #222;
 }
 
 #logo-image {
-    max-width: 90%;
-    height: auto;
-    margin: 20px;
 	filter: invert(1)
 }
 
 #tagline {
-    font-size: 25px;
-    font-weight: 1000;
-    color: #fff; /* Light text color */
-    margin: 5px 0; /* Adjust margin to reduce vertical space */
+    color: #fff;
 }
 
 .exhibition {
-    font-size: 30px;
-    font-weight: 1000;
-    text-align: left;
-    margin-bottom: 0;
-    margin-left: 20px;
-    color: #fff; /* Light text color */
+    color: #fff;
 }
 
 .date {
-    font-size: 25px;
-    font-weight: 1000;
-    margin-top: 0;
-    margin-left: 20px;
-    color: #fff; /* Light text color */
-}
-
-.img {
-    max-width: 90%;
-    height: auto;
-    border: 1px solid #fff; /* White border */
-    border-radius: 8px; /* Add rounded corners */
-    overflow: hidden; /* Hide overflow to keep the rounded corners */
-    margin-left: 20px;
+    color: #fff;
 }
 
 hr {
-    color: #fff; /* Light text color */
-    height: 2px;
-    width: 80%;
-    border: none;
-    border-top: 2px solid #fff; /* White border */
-    margin: 50px 0;
+    color: #fff;
+}
+
+.artists a {
+    color: #fff;
+}
+
+.list-of-works a {
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+.nav a {
+    color: #fff;
 }
 
 footer {
     background: #222; /* Dark gradient */
     color: #fff; /* Light text color */
-    text-align: center;
-    padding: 0px;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 1000;
-    position: fixed; /* Set position to fixed */
-    bottom: 0; /* Align to the bottom of the viewport */
-    left: 0;
 }
 
-.artists a {
-    text-align: left;
-    font-size: 20px;
-    font-weight: 1000;
-    margin-top: 0;
-    margin-left: 20px;
-    color: #fff; /* Light text color */
-}
-
-
-.list-of-works a {
-    text-align: right;
-    font-size: 20px;
-    font-weight: 1000;
-    margin-top: 0;
-    margin-left: 20px;
-    text-decoration: underline;
-    color: #fff; /* Light text color */
-
-}
-
-
-.nav a {
-    color: #fff; /* Light text color */
-    text-decoration: underline;
-    margin: 0 15px;
+.fwd-bck {
+    color: #fff;
 }
